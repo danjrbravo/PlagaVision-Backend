@@ -1,0 +1,28 @@
+# ── Web Framework ────────────────────────────────────────────────
+flask==3.0.0
+flask-cors==4.0.0
+flask-pymongo==2.3.0
+pymongo==4.6.1
+
+# ── YOLO + CPU-only PyTorch (clave para reducir tamaño) ─────────
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.2.2
+torchvision==0.17.2
+ultralytics==8.4.42
+
+# ── Computer Vision (headless = sin GUI, más pequeño) ──────────
+opencv-python-headless==4.9.0.80
+numpy==1.26.4
+pillow==10.2.0
+
+# ── Utilidades ──────────────────────────────────────────────────
+matplotlib==3.8.4
+pyyaml==6.0.1
+requests==2.31.0
+scipy==1.13.0
+tqdm==4.66.2
+psutil==5.9.8
+python-dotenv==1.0.1
+
+# ── Servidor producción ─────────────────────────────────────────
+gunicorn==21.2.0

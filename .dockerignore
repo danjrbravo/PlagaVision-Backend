@@ -1,0 +1,54 @@
+# Entornos virtuales
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Archivos locales
+.env
+.git/
+.gitignore
+README.md
+*.log
+*.md
+
+# Archivos multimedia (solo best.pt se monta como volumen)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.mp4
+*.avi
+*.mov
+*.pkl
+*.h5
+
+# Modelos (se montan como volumen, no se copian)
+best.pt
+*.pt
+
+# Directorios de datos
+static/uploads/
+static/results/
+uploads_data/
+results_data/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Tests
+tests/
+__pycache__/
+.pytest_cache/
+.coverage
+htmlcov/
