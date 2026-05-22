@@ -33,11 +33,11 @@ RUN mkdir -p static/uploads static/results
 RUN useradd -m appuser && chown -R appuser:appuser /app
 USER appuser
 
-EXPOSE 5000
+EXPOSE 5002
 
-# Healthcheck más específico
+# Healthcheck actualizado al puerto 5002
 HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
-    CMD curl -f http://localhost:5000/api/stats || exit 1
+    CMD curl -f http://localhost:5002/api/stats || exit 1
 
-# Gunicorn optimizado para producción
-CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--workers", "2", "--timeout", "120", "--access-logfile", "-", "--error-logfile", "-", "app:app"]
+# Gunicorn en puerto 5002
+CMD ["gunicorn", "--bind", "0.0.0.0:5002", "--workers", "2", "--timeout", "120", "--access-logfile", "-", "--error-logfile", "-", "app:app"]
