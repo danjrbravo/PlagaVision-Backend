@@ -19,7 +19,7 @@ README.md
 *.log
 *.md
 
-# Archivos multimedia (solo best.pt se monta como volumen)
+# Archivos multimedia
 *.jpg
 *.jpeg
 *.png
@@ -29,10 +29,6 @@ README.md
 *.mov
 *.pkl
 *.h5
-
-# Modelos (se montan como volumen, no se copian)
-best.pt
-*.pt
 
 # Directorios de datos
 static/uploads/
